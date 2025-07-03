@@ -1,0 +1,106 @@
+.block_first {
+    width: 100%;
+    background: url(../img/block_first.webp) no-repeat top center;
+    background-size: cover;
+    height: 920px;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    overflow: hidden;
+    .txt {
+        float: left;
+        margin-top: 552px;
+        width: 789px;
+        text-align: left;
+        h1 {
+            width: 100%;
+            font-size: 72px;
+            font-weight: 400;
+            line-height: 90px;
+            letter-spacing: 0.86px;
+            margin-bottom: 36px;
+            text-align: left;
+            color: #fff;
+            font-family: 'e-UkraineHead-Regular';
+        }
+        .button_blue { 
+            margin-top: 34px;
+            width: 554px;
+            padding: 25px 32px;
+            border-radius: 36px;
+            border: solid 2px #0f5ebb;
+            background: #0f5ebb;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #fff;
+            position: relative;
+            &:hover {
+                background: #0f5ebb;
+                color: #fff;
+                opacity: 0.9;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                right: 24px;
+                top: 29px;
+                height: 14px;
+                width: 14px;
+                background: url(../img/arrow_white.webp) no-repeat center center;
+                background-size: cover;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 1560px) {
+    .block_first {
+        height: 720px;
+        .txt {
+            margin-top: 394px;
+        }
+        
+    }
+}
+@media only screen and (max-width: 1390px) {
+    .block_first {
+        height: 532px;
+        .txt {
+            margin-top: 250px;
+            width: 100%;
+            h1 {
+                width: 100%;
+                font-size: 56px;
+                line-height: 1.2;
+            }
+            .button_blue { 
+                width: 459px;
+                padding: 15px 32px;
+                border-radius: 28px;
+                font-size: 16px;
+                &:after {
+                    top: 17px;      
+                }            
+            }
+        }
+        
+    }
+}
+@media only screen and (max-width: 720px) {
+    .block_first {
+        height: 570px;
+        .txt {
+            margin-top: 320px;
+            h1 {
+                font-size: 36px;
+            }
+            .button_blue { 
+                width: 100%;
+                margin: 0;
+                padding: 15px 10px;        
+            }
+        }
+        
+    }
+}

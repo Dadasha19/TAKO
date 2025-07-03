@@ -1,0 +1,167 @@
+footer {
+    flex-shrink: 0;
+    width: 100%;
+    padding: 72px 0 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color: #1c2f43;
+    align-items: flex-end;
+    max-width:1904px;
+    .footer_block_01 {
+        width: 554px;
+        padding: 0 94px 0 0;
+        .logo { 
+            float: left;
+            height: 40px;
+            margin: 0 20px 206px 0;
+            img { 
+                height: 100%;
+            }
+        }
+        p   {
+            float: left;
+            width: 100%;
+            margin-bottom: 0;
+            text-align: left;
+            height: 57px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0.26px;
+            color: #fff;
+        }
+    }
+    .footer_block_02 {
+        width: 438px;
+        padding: 0 0 0 0;
+        ul {
+            float: left;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li {
+                float: left;
+                width: 100%;
+                margin-top: 24px;
+                text-align: left;
+                a {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 1.2;
+                    letter-spacing: 0.22px;
+                    text-align: left;
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .footer_block_03 { 
+        width: 240px;
+        .soc {
+            float: left;
+            width: 100%;
+            a { 
+                float: left;
+                width: 48px;
+                height: 48px;
+                padding: 0;
+                background-color: #0f5ebb;
+                text-align: center;
+                margin-right: 16px;
+                border-radius: 50%;
+                img { 
+                    display: inline-block;
+                    width: 20px;
+                    margin: 14px;
+                }
+                &:hover {opacity: 0.8;}
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+        .button_transparent { 
+            width: 100%;
+            margin-top: 24px;
+            padding: 12px 12px 12px 74px;
+            border: solid 2px #fff;
+            font-weight: 300;
+            color: #fff;
+            background: url(../img/button_email.webp) no-repeat 20px 14px;
+            background-size: 19px;
+            &:hover {
+                background-color: transparent;
+                color: #fff;
+                opacity: 0.8;
+            }
+        }
+    }
+    .footer_bottom {
+        float: left;
+        width: calc(100% - 48px);
+        text-align: left;
+        line-height: 17px;
+        color: #d0d0d0;
+        padding: 32px 0;
+        border-top: solid 1px #6b6b6b;
+        margin: 32px 24px 0;
+    }
+}
+
+
+@media only screen and (max-width: 1390px) {
+    footer {
+        .footer_block_01 {
+            width: 382px;
+            order: 1;
+            .logo { 
+                margin: 0 20px 32px 0;
+            }
+            p   {
+                height: auto;
+                font-size: 12px;
+            }
+        }
+        .footer_block_02 {
+            order: 3;
+            margin-top: 56px;
+        }
+        .footer_block_03 { 
+            order: 2;
+        }
+    }
+}
+@media only screen and (max-width: 720px) {
+    footer {
+        padding: 48px 0 0;
+        .footer_block_01 {
+            width: 100%;
+            margin-bottom: 32px;
+        }
+        .footer_block_02 {
+            width: 100%;
+            margin-top: 32px;
+            ul {
+                width: 100%;
+                margin-bottom: 32px;
+            }   
+        }
+        .footer_block_03 { 
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width: 350px) {
+    footer {
+        .footer_bottom {
+            width: 100%;
+            margin: 32px 0 0;
+        }
+    }
+}

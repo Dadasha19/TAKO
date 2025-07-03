@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+html { width: 100%; height: 100%; }
+body { position: relative; height: 100%; -webkit-font-smoothing: antialiased; box-sizing: border-box; font-family: 'e-Ukraine'; font-weight: 300; font-size: 14px; line-height: 14px; color: #282828; background: #F6F7F9; margin:0 auto; }
+.open { overflow: hidden;}
+::-webkit-input-placeholder { opacity:1;}
+::-moz-placeholder          { opacity:1;}
+:-moz-placeholder           { opacity:1;}
+:-ms-input-placeholder      { opacity:1;}
+::placeholder               { opacity:1;}
+a { 
+    text-decoration: underline;
+    &:hover { text-decoration: none;}
+}
+
+.main { flex-direction: column; height: 100%;}
+
+.container { max-width:1542px; margin: 0 auto; padding: 0 0px;}
+.content {
+    max-width:1904px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column; 
+    flex-grow: 1;
+    display: flex;
+}
+.row { margin-left: 0 !important; margin-right: 0 !important;
+    &>* { padding-right: 0; padding-left: 0; }
+}
+.button_transparent { 
+    display: inline-block;
+    text-align: center;
+    padding: 11px 28px;
+    border-radius: 24px;
+    border: solid 2px #0f5ebb;
+    font-weight: 700;
+    line-height: 22px;
+    color: #0f5ebb;
+    text-decoration: none;
+    outline: none !important;
+    box-sizing: border-box;
+    &:hover {
+        background: #0f5ebb;
+        color: #fff;
+    }
+}
+.button_blue { 
+    display: inline-block;
+    text-align: center;
+    padding: 11px 28px;
+    border-radius: 24px;
+    border: solid 2px #0f5ebb;
+    background: #0f5ebb;
+    font-weight: 700;
+    line-height: 22px;
+    color: #fff;
+    text-decoration: none;
+    outline: none !important;
+    box-sizing: border-box;
+    &:hover {
+        background: transparent;
+        color: #0f5ebb;
+    }
+}
+
+.title {
+    width: 100%;
+    font-size: 56px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #1c2f43;
+    font-family: 'e-UkraineHead-Light';
+    padding: 62px 32px 62px;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+
+@import "./block/fonts";
+@import "./block/header";
+@import "./block/menu_all";
+@import "./block/block_first";
+@import "./block/about_us";
+@import "./block/numbers";
+@import "./block/works";
+@import "./block/reviews";
+@import "./block/form";
+@import "./block/footer";
+
+
+@media only screen and (max-width: 1440px) {
+    .container { max-width:700px;}
+}
+@media only screen and (max-width: 700px) {
+    .container { max-width:340px;}
+}
+
+
+.clearfix{*zoom:1;}.clearfix:before,.clearfix:after{display:table;content:"";line-height:0;}
+.clearfix:after{clear:both;}
+
+// @-webkit-keyframes menu-animation {
+//     0% {
+//       opacity: 0;
+//       transform: scale(0.04) translateY(300%);
+//     }
+//     40% {
+//       transform: scale(0.04) translateY(0);
+//       transition: ease-out;
+//     }
+//     40% {
+//       transform: scale(0.04) translateY(0);
+//     }
+//     60% {
+//       opacity: 1;
+//       transform: scale(0.02) translateY(0px);
+//     }
+//     61% {
+//       transform: scale(0.04);
+//     }
+//     99.9% {
+//       height: 0;
+//       padding-bottom: 100%;
+//       border-radius: 100%;
+//     }
+//     100% {
+//       transform: scale(2);
+//       height: 100%;
+//       padding-bottom: 0;
+//       border-radius: 0;
+//     }
+//   }
+//   @keyframes menu-animation {
+//     0% {
+//       opacity: 0;
+//       transform: scale(0.04) translateY(300%);
+//     }
+//     40% {
+//       transform: scale(0.04) translateY(0);
+//       transition: ease-out;
+//     }
+//     40% {
+//       transform: scale(0.04) translateY(0);
+//     }
+//     60% {
+//       opacity: 1;
+//       transform: scale(0.02) translateY(0px);
+//     }
+//     61% {
+//       transform: scale(0.04);
+//     }
+//     99.9% {
+//       height: 0;
+//       padding-bottom: 100%;
+//       border-radius: 100%;
+//     }
+//     100% {
+//       transform: scale(2);
+//       height: 100%;
+//       padding-bottom: 0;
+//       border-radius: 0;
+//     }
+//   }
+
+
+
+
+
+@media only screen and (max-width: 1560px) {
+    .container { max-width:1376px;}
+}
+@media only screen and (max-width: 1390px) {
+    .container { max-width:960px;}
+    .title {
+        font-size: 28px;
+        line-height: 34px;
+        padding: 16px 24px 32px;
+    }
+}
+@media only screen and (max-width: 980px) {
+    .container { max-width:704px;}
+}
+@media only screen and (max-width: 720px) {
+    .container { max-width:327px;}
+}

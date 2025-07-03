@@ -1,0 +1,290 @@
+.numbers {
+    padding: 132px 0 132px 0;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    h2 {
+        width: 755px;
+        font-size: 56px;
+        font-weight: 300;
+        line-height: 34px;
+        letter-spacing: 0.7px;
+        text-align: left;
+        color: #1c2f43;
+        text-align: left;
+        font-family: 'e-UkraineHead-Light';
+    }
+    p {
+        width: 755px;
+        margin-bottom: 32px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        text-align: justify;
+        color: #6b6b6b;
+        strong {
+            font-weight: 300;
+            color: #1c2f43;
+        }
+    }
+    .numbers_more {
+        margin: 32px 0;
+        border-top: solid 1px #d0d0d0;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        .numbers_item {
+            width: 755px;
+            margin:32px 0 0 0;
+            flex-shrink: 0;
+            position: relative;
+            .img {
+                width: 100%;
+                height: 320px;
+                overflow: hidden;
+                border-radius: 8px;
+                position: relative;
+                background: #F6F7F9;
+                img {
+                    min-width: 100%;
+                    height: 100%;
+                }
+                
+            }
+            .text {
+                position: absolute;
+                bottom: 24px;
+                left: 0;
+                width: 100%;
+                padding: 0 24px;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 22px;
+                letter-spacing: 0.26px;
+                color: #6b6b6b;
+                text-align: left;
+                span {
+                    font-size: 22px;
+                    line-height: 46px;
+                    letter-spacing: 0.35px;
+                    margin-bottom: 8px;
+                    display: inline-block;
+                    width: 100%;
+                    color: #1c2f43;
+                    strong {
+                        font-size: 72px;
+                        font-weight: 300;
+                        letter-spacing: 0.86px;
+                        font-family: 'e-UkraineHead-Light';
+                    }
+                }
+            }
+            &:nth-of-type(1){
+                .img {
+                    height: 400px;
+                }
+                .text {
+                    color: #d0d0d0;
+                    span {
+                        color: #fff;
+                    }
+                }
+            }    
+            &:nth-of-type(2){
+                .text {
+                    color: #d0d0d0;
+                    span {
+                        color: #fff;
+                    }
+                }
+                .img {
+                    height: 400px;
+                    &::before {
+                    display: inline-block;
+                    border: solid #FFD719;
+                    border-width: 30px 0 0 30px;
+                    display: inline-block;
+                    padding: 15px;
+                    position: absolute;
+                    top: 16px;
+                    left: 16px;
+                    content: '';
+                    z-index: 2;
+                    }
+                }
+            }
+            &:nth-of-type(1n+5){
+                width: 492px;
+            }  
+        }
+    }
+    .button_blue { 
+            width: 100%;
+            padding: 23px 32px;
+            border-radius: 36px;
+            border: solid 2px #0f5ebb;
+            background: #0f5ebb;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #fff;
+            position: relative;
+            text-align: left;
+            &:hover {
+                background: #0f5ebb;
+                color: #fff;
+                opacity: 0.9;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                right: 27px;
+                top: 27px;
+                height: 14px;
+                width: 14px;
+                background: url(../img/arrow_white.webp) no-repeat center center;
+                background-size: cover;
+            }
+        }
+}
+
+
+
+
+
+@media only screen and (max-width: 1560px) {
+    .numbers {
+        h2 {
+            width: 672px;
+        }
+        p {
+            width: 672px;
+        }
+        .numbers_more {
+            .numbers_item {
+                width: 672px;
+                &:nth-of-type(1n+5){
+                    width: 437px;
+                }  
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1390px) {
+    .numbers {
+        padding: 64px 0 64px 0;
+        h2 {
+            width: 464px;
+            font-size: 36px;
+            line-height: 1.2px;
+        }
+        p {
+            width: 464px;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        .numbers_more {
+            margin: 0 0 32px 0;
+            .numbers_item {
+                width: 464px;
+                .img {
+                    height: 200px;
+                }
+                .text {
+                    bottom: 16px;
+                    padding: 0 16px;
+                    font-size: 12px;
+                    line-height: 1.2;
+                    span {
+                        font-size: 22px;
+                        line-height: 1.2;
+                        strong {
+                            font-size: 48px;
+                            line-height: 1.2;
+                        }
+                    }
+                }
+                &:nth-of-type(1), &:nth-of-type(2){
+                    .img {
+                        height: 272px;
+                    }
+                }   
+                &:nth-of-type(1n+5){
+                    width: 310px;
+                    .text {
+                        span {
+                            strong {
+                                font-size: 36px;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+        .button_blue { 
+            padding: 15px 32px;
+            border-radius: 36px;
+            font-size: 16px;
+            &::after {
+                top: 17px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 980px) {
+    .numbers {
+        h2 {
+            width: 344px;
+        }
+        p {
+            width: 344px;
+        }
+        .numbers_more {
+            .numbers_item {
+                width: 344px;
+                &:nth-of-type(1n+5){
+                    width: 224px;
+                }  
+            }
+        }
+    }
+}
+@media only screen and (max-width: 720px) {
+    .numbers {
+        h2 {
+            width: 100%;
+            line-height: 1.2;
+            margin-bottom: 30px;
+        }
+        p {
+            width: 100%;
+        }
+        .numbers_more {
+            .numbers_item {
+                width: 100%;
+                margin-top: 16px;
+                .img {
+                    height: 172px;
+                }
+                .text {
+                    span {
+                        font-size: 20px;
+                        strong {
+                            font-size: 36px;
+                        }
+                    }
+                }
+                &:nth-of-type(1), &:nth-of-type(2){
+                    .img {
+                        height: 200px;
+                    }
+                }   
+                &:nth-of-type(1n+5){
+                    width: 100%;
+                }  
+            }
+        }
+    }
+}

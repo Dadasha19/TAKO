@@ -1,0 +1,313 @@
+.reviews {
+    padding: 132px 0 132px 0;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    .reviews_top {
+        padding: 64px 24px;
+        border-radius: 8px;
+        margin-bottom: 32px;
+        background-color: #1c2f43;
+        h2 {
+            width: 100%;
+            font-size: 56px;
+            font-weight: 300;
+            line-height: 56px;
+            letter-spacing: 0.7px;
+            font-family: 'e-UkraineHead-Light';
+            text-align: left;
+            color: #fff;
+            text-align: left;
+            padding-bottom: 30px;
+            margin-bottom: 32px;
+            border-bottom: 2px solid #f6f7f9;
+        }
+        p {
+            margin-bottom: 0;
+            width: 773px;
+            float: left;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.2;
+            letter-spacing: 0.32px;
+            text-align: left;
+            color: #fff;
+        }
+        .soc {
+            float: right;
+            width: 336px;
+            a { 
+                float: left;
+                width: 72px;
+                height: 72px;
+                padding: 0;
+                background-color: #0f5ebb;
+                text-align: center;
+                margin-right: 16px;
+                border-radius: 50%;
+                img { 
+                    display: inline-block;
+                    width: 28px;
+                    margin: 22px;
+                }
+                &:hover {opacity: 0.8;}
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    .reviews_slider {
+        float: left;
+        width: 100%;
+        padding-bottom: 104px;
+        position: relative;
+        overflow: hidden;
+        .swiper-wrapper {
+            .swiper-slide {
+                height: 524px;
+                overflow: hidden;
+                border-radius: 8px;
+                text-align: center;
+                img, video {
+                    height: 100%;
+                }
+            }
+        }
+        .swiper-button-prev {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            top: auto;
+            width: 360px;
+            display: inline-block;
+            text-align: right;
+            padding: 23px 30px;
+            border-radius: 36px;
+            border: solid 2px #0f5ebb;
+            font-weight: 700;
+            line-height: 22px;
+            font-size: 18px;
+            color: #0f5ebb;
+            text-decoration: none;
+            background: transparent;
+            outline: none !important;
+            box-sizing: border-box;
+            height: auto;
+            margin: auto;
+            &:hover {
+                opacity: 0.8;
+            }
+            &::after {
+                position: absolute;
+                background: url('../img/slick_arrow.webp') no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                top: 20px;
+                left: 22px;
+                content: " ";
+            }
+            &.swiper-button-disabled {
+                opacity: 0.5;
+            }
+        }
+        .swiper-button-next {
+            position: absolute;
+            bottom: 0;
+            top: auto;
+            right: 0;
+            width: 1150px;
+            display: inline-block;
+            text-align: left;
+            padding: 23px 30px;
+            border-radius: 36px;
+            border: solid 2px #0F5EBB;
+            font-weight: 700;
+            line-height: 22px;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            background: #0F5EBB;
+            outline: none !important;
+            box-sizing: border-box;
+            height: auto;
+            margin: auto;
+            &:hover {
+                opacity: 0.8;
+            }
+            &::after {
+                position: absolute;
+                background: url('../img/slick_arrow_w.webp') no-repeat;
+                background-size: cover;
+                width: 28px;
+                height: 28px;
+                top: 20px;
+                right: 22px;
+                content: " ";
+            }
+            &.swiper-button-disabled {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 1560px) {
+    .reviews {
+        .reviews_slider {
+            .swiper-wrapper {
+                .swiper-slide {
+                    height: 492px;
+                }
+            }
+            .swiper-button-prev {
+                width: 320px;
+            }
+            .swiper-button-next {
+                width: 1024px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1390px) {
+    .reviews {
+        padding: 24px 0 24px 0;
+        .reviews_top {
+            padding: 48px 24px;
+            h2 {
+                font-size: 36px;
+                line-height: 1.2;
+            }
+            p {
+                width: 620px;
+                font-size: 14px;
+                margin-top: 8px;
+            }
+            .soc {
+                width: auto;
+                a { 
+                    width: 48px;
+                    height: 48px;
+                    img { 
+                        width: 16px;
+                        margin: 16px;
+                    }
+                }
+            }
+        }
+        .reviews_slider {
+            padding-bottom: 88px;
+            .swiper-wrapper {
+                .swiper-slide {
+                    height: 352px;
+                }
+            }
+            .swiper-button-prev {
+                width: 216px;
+                padding: 15px 30px;
+                border-radius: 28px;
+                font-size: 16px;
+                &::after {
+                    top: 12px;
+                }
+            }
+            .swiper-button-next {
+                width: 715px;
+                padding: 15px 30px;
+                border-radius: 28px;
+                font-size: 16px;
+                &::after {
+                    top: 12px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 980px) {
+    .reviews {
+        .reviews_top {
+            p {
+                width: 352px;
+                margin-top: 0px;
+            }
+            .soc {
+                margin-top: 8px;
+            }
+        }
+        .reviews_slider {
+            .swiper-wrapper {
+                .swiper-slide {
+                    height: 352px;
+                }
+            }
+            .swiper-button-next {
+                width: 459px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 720px) {
+    .reviews {
+        .reviews_top {
+            padding: 32px 24px;
+            h2 {
+                font-size: 36px;
+                line-height: 1.2;
+                margin-bottom: 24px;
+                padding-bottom: 24px;
+            }
+            p {
+                width: 100%;
+                margin-top: 0;
+            }
+            .soc {
+                width: 100%;
+                margin-top: 32px;
+                a { 
+                    width: 56px;
+                    height: 56px;
+                    img { 
+                        width: 24px;
+                        margin: 16px;
+                    }
+                }
+            }
+        }
+        .reviews_slider {
+            .swiper-wrapper {
+                .swiper-slide {
+                    height: 290px;
+                }
+            }
+            .swiper-button-prev {
+                width: 125px;
+                padding: 11px 28px;
+                border-radius: 24px;
+                font-size: 14px;
+                &::after {
+                    width: 20px;
+                    height: 20px;
+                    top: 12px;
+                    left: 21px;
+                }
+            }
+            .swiper-button-next {
+                width: 186px;
+                padding: 11px 28px;
+                border-radius: 24px;
+                font-size: 14px;
+                &::after {
+                    width: 20px;
+                    height: 20px;
+                    top: 12px;
+                    right: 21px;
+                }
+            }
+        }
+    }
+}

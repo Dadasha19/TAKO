@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>TAKO</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/slick.css"/>
+		<link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/style.min.css"/>
+		<script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+		
+	</head>
+	<body>
+		<main class="main d-flex text-center">
+			<header>
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-auto p-0">
+							<button class="menu-toggle"></button>
+							<a href="/" class="logo col-auto p-0">
+								<img class="desktop_logo" src="img/logo.webp" alt="" />
+								<img class="mobile_logo" src="img/logo_m.webp" alt="" />
+							</a>
+							<nav class="menu_all nav nav-tabs">
+								<ul>
+									<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle products_menu" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Вироби</a>
+									</li>
+									<li><a href="#">Про нас</a></li>
+									<li><a href="#">Як ми працюємо</a></li>
+									<li><a href="#">Партнери</a></li>
+									<li><a href="#">Відгуки</a></li>
+								</ul>
+								<div class="dropdown_menu_all">
+									<div class="container">
+										<ul>
+											<li>
+												<a href="#">
+													<div class="img">
+														<img src="img/products_menu_01.webp" alt="">
+													</div>
+													<span>Для зброї</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<div class="img">
+														<img src="img/products_menu_02.webp" alt="">
+													</div>
+													<span>Медицина</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<div class="img">
+														<img src="img/products_menu_03.webp" alt="">
+													</div>
+													<span>Для рацій</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<div class="img">
+														<img src="img/products_menu_05.webp" alt="">
+													</div>
+													<span>РЕБ / РЕР</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<div class="img">
+														<img src="img/products_menu_04.webp" alt="">
+													</div>
+													<span>Для дронів</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+						<div class="col-auto p-0">
+							<a href="#" class="button button_transparent">Зв’язатися</a>
+							<a href="#" class="button button_transparent">Підтримати</a>
+							<a href="form.html" class="button button_blue button_blue_header">Передзамовлення<span>9<i>+</i></span></a>
+						</div>
+					</div>
+	        	</div>
+				<nav class="navbar_menu">
+					<ul class="menu_products">
+						<span>ВИРОБИ</span>
+						<li><a href="#">Для зброї</a></li>
+						<li><a href="#">Медицина</a></li>
+						<li><a href="#">Для рацій</a></li>
+						<li><a href="#">РЕБ / РЕР</a></li>
+						<li><a href="#">Для дронів</a></li>
+					</ul>
+					<ul class="menu_main">
+						<li><a href="#">Головна</a></li>
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Як ми працюємо</a></li>
+						<li><a href="#">Партнери</a></li>
+						<li><a href="#">Відгуки</a></li>
+					</ul>
+					<div class="soc_menu">
+						<div class="soc">
+							<a href="#"><img src="img/soc_01_m.webp" alt=""/></a>
+							<a href="#"><img src="img/soc_02_m.webp" alt=""/></a>
+							<a href="#"><img src="img/soc_03_m.webp" alt=""/></a>
+							<a href="#"><img src="img/soc_04_m.webp" alt=""/></a>
+						</div>
+						<a href="" class="button button_blue">Зв’язатися</a>
+					</div>
+				</nav>
+			</header>
+			<div class="content">
+				<div class="form">
+                    <h1 class="title">Оформити замовлення</h1>
+                    <div class="row justify-content-between">
+                        <form id="orderForm">
+                            <div class="form_left col-12 col-md-6">
+                                <div class="form_left_block">
+                                    <h3>Контакти замовника</h3>
+                                    <div class="input">
+                                        <label for="">Прізвище</label>
+                                        <input type="text" placeholder="Введіть прізвище" >
+                                    </div>
+                                    <div class="input">
+                                        <label for="">Ім’я</label>
+                                        <input type="text" placeholder="Введіть ім’я" >
+                                    </div>
+                                    <div class="input">
+                                        <label for="">По батькові</label>
+                                        <input type="text" placeholder="Введіть по батькові" >
+                                    </div>
+                                    <div class="input">
+                                        <label for="">Номер телефону</label>
+                                        <input type="tel" value="+380" >
+                                    </div>
+                                </div>
+                                <div class="form_left_block">
+                                    <h3>Доставка</h3>
+                                    <div class="input">
+                                        <label for="">Місто / Населений пукт</label>
+                                        <input id="cityInput" type="text" placeholder="Введіть" >
+                                        <div id="suggestions" class="suggestions-box"></div>
+                                    </div>
+                                    <div class="input">
+                                        <label for="">Номер відділення</label>
+                                        <div class="select-wrapper">
+                                            <div class="select-arrow"></div>
+                                            <div class="select-arrow"></div>
+                                            <select name="branch" id="branchSelect">
+                                                <option value="">Оберіть номер відділення НП</option>
+                                                <option value="np1">Відділення НП 1</option>
+                                                <option value="np2">Відділення НП 2</option>
+                                                <option value="np3">Відділення НП 3</option>
+                                                <option value="np4">Відділення НП 4</option>
+                                                <option value="np5">Відділення НП 5</option>
+                                                <option value="np6">Відділення НП 6</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_left_block">
+                                    <h3>Зручний метод зв’язку</h3>
+                                    <div class="radio_all">
+                                        <div class="radio">
+                                            <input type="radio" id="radio1" name="radio" checked>
+                                            <label for="radio1">Номер телефону</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="radio2" name="radio">
+                                            <label for="radio2">Viber</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="radio3" name="radio">
+                                            <label for="radio3">Telegram</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="radio4" name="radio">
+                                            <label for="radio4">Whatsup</label>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" id="radio5" name="radio">
+                                            <label for="radio5">Signal</label>
+                                        </div>
+                                    </div>
+                                    <div class="input input_big">
+                                        <label for="">Номер телефону</label>
+                                        <input type="tel" value="+380" >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form_right col-12 col-md-6">
+                                <h3>Передзамовлення</h3>
+                                <div class="item">
+                                    <div class="item_img"><img src="img/item_img.webp" alt=""></div>
+                                    <div class="name">Пристрій швидкого спорядження набоїв</div>
+                                    <a href="#" class="del"></a>
+                                    <div class="number">
+                                        <button type="button" class="but counterBut dec"><img src="img/minus.webp" alt=""></button>
+                                        <input type="text" class="field fieldCount" value="1" data-min="1" data-max="20">
+                                        <button type="button" class="but counterBut inc"><img src="img/plus.webp" alt=""></button>
+                                    </div>
+                                    <div class="price">
+                                        10,00 <small>грн</small>
+                                        <span>собівартість за од.</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_img"><img src="img/item_img.webp" alt=""></div>
+                                    <div class="name">Пристрій швидкого спорядження набоїв</div>
+                                    <a href="#" class="del"></a>
+                                    <div class="number">
+                                        <button type="button" class="but counterBut dec"><img src="img/minus.webp" alt=""></button>
+                                        <input type="text" class="field fieldCount" value="1" data-min="1" data-max="20">
+                                        <button type="button" class="but counterBut inc"><img src="img/plus.webp" alt=""></button>
+                                    </div>
+                                    <div class="price">
+                                        10,00 <small>грн</small>
+                                        <span>собівартість за од.</span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_img"><img src="img/item_img.webp" alt=""></div>
+                                    <div class="name">Пристрій швидкого спорядження набоїв</div>
+                                    <a href="#" class="del"></a>
+                                    <div class="number">
+                                        <button type="button" class="but counterBut dec"><img src="img/minus.webp" alt=""></button>
+                                        <input type="text" class="field fieldCount" value="1" data-min="1" data-max="20">
+                                        <button type="button" class="but counterBut inc"><img src="img/plus.webp" alt=""></button>
+                                    </div>
+                                    <div class="price">
+                                        10,00 <small>грн</small>
+                                        <span>собівартість за од.</span>
+                                    </div>
+                                </div>
+                                <div class="price_all">
+                                    <span>собівартість виробів:</span>
+                                    140,00 <small>грн</small>
+                                    <strong>Для військових — <i>безкоштовно</i></strong>
+                                </div>
+                                <a href="#" id="submitBtn" class="button button_blue">Підтвердити</a>
+                                <a href="#" class="button button_transparent">Підтвердити та підтримати</a>
+                                <p>Залиште заявку — ми зв’яжемось із вами для уточнення деталей і підтвердження замовлення. <br/> Жодної передоплати до підтвердження. Все просто і чесно.</p>
+                            </div>
+                        </form>
+                        <div id="successBlock" class="successBlock" style="display: none; padding: 40px; background: #f5f5f5;">
+                            <h1>Успішно!</h1>
+                            <p>Дякуємо! Наш волонтер скоро зв’яжеться з вами для підтвердження деталей.</p>
+                            <div class="clearfix"></div>
+                            <a href="index.html" id="submitBtn" class="button button_blue">На головну</a>
+                            <div class="clearfix"></div>
+                            <a href="#" class="button button_transparent">Підтримати ТА-КО</a>
+                        </div>
+                    </div>
+				</div>
+			</div>
+            <footer>
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="footer_block_01 col-12 col-md-4">
+							<a href="/" class="logo col-auto p-0"><img src="img/logo_w.webp" alt="" /></a>
+							<p>Розвивайте технології разом із нами — обирайте якісні рішення, підтримуйте виробництво та рухайте індустрію вперед!</p>
+						</div>
+						<div class="footer_block_02 col-12 col-md-4">
+							<ul>
+                                <li><a href="#">Головна</a></li>
+                                <li><a href="#">Про нас</a></li>
+                                <li><a href="#">Як ми працюємо</a></li>
+                                <li><a href="#">Партнери</a></li>
+                                <li><a href="#">Відгуки</a></li>
+                                <li><a href="#">ЗМІ про нас</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Для зброї</a></li>
+                                <li><a href="#">Медицина</a></li>
+                                <li><a href="#">Для рацій</a></li>
+                                <li><a href="#">РЕБ / РЕР</a></li>
+                                <li><a href="#">Для дронів</a></li>
+                            </ul> 
+						</div>
+						<div class="footer_block_03 col-12 col-md-4">
+							<div class="soc">
+								<a href="#"><img src="img/soc_01.webp" alt=""/></a>
+								<a href="#"><img src="img/soc_02.webp" alt=""/></a>
+								<a href="#"><img src="img/soc_03.webp" alt=""/></a>
+								<a href="#"><img src="img/soc_04.webp" alt=""/></a>
+							</div>
+							<a href="mail:example@mail.com" class="button button_transparent">example@mail.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom">
+                    <div class="container">
+						© <span id="year"></span> TAKO. All rights reserved
+					</div>
+                </div>
+			</footer>
+			<div class="bg_menu"></div>
+		</main>
+        <script type="text/javascript" src="js/cityInput.js"></script>
+	    <script type="text/javascript" src="js/active.js"></script>
+        <script type="text/javascript" src="js/valid.js"></script>
+	</body>
+</html>
